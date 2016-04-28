@@ -1,43 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_margin"
     android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/img_cover"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:id="@+id/txt_title"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:layout_gravity="center_horizontal"
-        tools:text = "Title"/>
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:scaleType="centerCrop"/>
 
-    <TextView
-        android:id="@+id/txt_vanue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="14sp"
-        android:layout_gravity="center_horizontal"
-        tools:text = "Venue"/>
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            tools:text = "Title"/>
 
-    <Button
-        android:id="@+id/btn_list_peserta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:layout_gravity="center_horizontal"
-        android:text="List Peserta"
-        android:onClick="goTOListMember"/>
+        <TextView
+            android:id="@+id/txt_vanue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            tools:text = "Venue"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txt_dilo_bandung"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_gravity="center_horizontal"
+            tools:text = "Event Organizer"/>
+
+        <Button
+            android:id="@+id/btn_list_peserta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="List Peserta"
+            android:onClick="goTOListMember"/>
+    </LinearLayout>
+</ScrollView>
