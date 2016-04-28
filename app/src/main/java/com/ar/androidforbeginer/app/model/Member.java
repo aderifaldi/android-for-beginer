@@ -7,22 +7,95 @@ import java.io.Serializable;
  */
 public class Member implements Serializable {
 
-    private MemberGeneralInfo general_info;
-    private MemberEducation[] education;
+    private String name;
+    private String palce_born;
+    private String birth_date;
+    private String address;
+    private String status;
+    private String email;
+    private String contact;
+    private String facebook;
+    private String twitter;
+    private String photo;
 
-    public MemberGeneralInfo getGeneral_info() {
-        return general_info;
+    public String getName() {
+        return name;
     }
 
-    public MemberEducation[] getEducation() {
-        return education;
+    public String getPalce_born() {
+        return palce_born;
     }
 
-    public void setGeneral_info(MemberGeneralInfo general_info) {
-        this.general_info = general_info;
+    public String getBirth_date() {
+        return birth_date;
     }
 
-    public void setEducation(MemberEducation[] education) {
-        this.education = education;
+    public String getAddress() {
+        return address;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public String getFacebook() {
+        return facebook;
+    }
+
+    public String getTwitter() {
+        return twitter;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPalce_born(String palce_born) {
+        this.palce_born = palce_born;
+    }
+
+    public void setBirth_date(String birth_date) {
+        this.birth_date = birth_date;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
+    public void setTwitter(String twitter) {
+        this.twitter = twitter;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
 }

@@ -1,7 +1,5 @@
 package com.ar.androidforbeginer.app.adapter;
 
-//http://stackoverflow.com/questions/26585941/recyclerview-header-and-footer
-
 import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -54,14 +52,14 @@ public class MemberListAdapter extends RecyclerView.Adapter<MemberListAdapter.My
         final long identity = System.currentTimeMillis();
         holder.identity = identity;
 
-        if (member.getGeneral_info().getPhoto().length() != 0){
+        if (member.getPhoto().length() != 0){
             Picasso.with(context).
-                    load(member.getGeneral_info().getPhoto()).
+                    load(member.getPhoto()).
                     into(holder.img_member);
         }
 
-        holder.txt_member_name.setText(member.getGeneral_info().getName());
-        holder.txt_member_address.setText(member.getGeneral_info().getAddress());
+        holder.txt_member_name.setText(member.getName());
+        holder.txt_member_address.setText(member.getAddress());
 
     }
 
