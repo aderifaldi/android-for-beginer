@@ -30,7 +30,11 @@ abstract public class ApiGetMember extends BaseApi{
         super(context);
 
         ajaxType = AjaxType.GET;
-        endpointApi = "json-sample.json";
+        endpointApi = "json-member-android-for-beginer-dilo.json";
+
+        /**
+         * CARA MENGGUNAKAN HTTP TYPE : GET, POST, DELETE, POST_RAW_JSON
+         */
 
         responseHandler = new AsyncHttpResponseHandler() {
 
