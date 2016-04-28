@@ -15,7 +15,7 @@ import org.apache.http.Header;
 /**
  * Created by Ade Rifaldi on 4/9/2016.
  */
-abstract public class ApiGetMember extends BaseApi{
+abstract public class ApiGetJSONData extends BaseApi{
 
     private static final String TAG = "GetMember";
 
@@ -26,7 +26,7 @@ abstract public class ApiGetMember extends BaseApi{
     private Gson gson;
     private GsonBuilder gsonBuilder;
 
-    public ApiGetMember(Context context) {
+    public ApiGetJSONData(Context context) {
         super(context);
 
         ajaxType = AjaxType.GET;
