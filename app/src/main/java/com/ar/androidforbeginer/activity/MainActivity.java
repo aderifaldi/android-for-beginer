@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TITLE = "Android Training For Beginner";
     private static final String VENUE = "Gd. Bale Motekar UNPAD, Jln. Banda No.40 Bandung";
-    private static final String DILO_BANDUNG = "Organized by\nDilo Bandung";
     private static final String DILO_URL = "http://bandung.dilo.id";
 
     private ImageView img_cover;
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //SET TEXT VIEW
         txt_title.setText(TITLE);
         txt_vanue.setText(VENUE);
-        txt_dilo_bandung.setText(DILO_BANDUNG);
+        txt_dilo_bandung.setText(getResources().getString(R.string.dilo_bandung));
 
         //SET ON CLICK
         txt_dilo_bandung.setOnClickListener(new View.OnClickListener() {
